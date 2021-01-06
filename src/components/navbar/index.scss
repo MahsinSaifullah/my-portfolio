@@ -1,0 +1,39 @@
+@import '../../constants/colors.scss';
+@import '../../constants/mixins.scss';
+@import '../../constants/breakPoints.scss';
+
+.navbar {
+  align-items: center;
+  flex-direction: row;
+  flex-direction: column;
+  justify-content: center;
+  background: #1b242f;
+  border-bottom: 3px solid #04c2c9;
+  height: 55px;
+  text-align: left;
+  width: 100%;
+  position: sticky;
+}
+
+.navbar__items {
+  display: flex;
+  width: 100%;
+  color: $white;
+  font-size: 18px;
+  margin-left: 80px;
+}
+
+.navbar__links {
+  margin-right: 40px;
+  transition: all 0.3s;
+
+  &:hover {
+    cursor: pointer;
+    color: $pink;
+  }
+}
+
+.selected {
+  color: $pink;
+  font-weight: 500;
+}

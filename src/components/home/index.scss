@@ -1,5 +1,6 @@
 @import '../../constants/colors.scss';
 @import '../../constants/mixins.scss';
+@import '../../constants/breakPoints.scss';
 
 .home {
   background-image: url('../../assets/images/portfolioBackground.jpeg');
@@ -22,6 +23,11 @@
 
   span {
     color: $pink;
+  }
+
+  @include mediaQuery($small) {
+    font-size: 16pt;
+    line-height: 20pt;
   }
 }
 
