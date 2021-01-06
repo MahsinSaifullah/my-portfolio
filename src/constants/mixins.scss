@@ -1,0 +1,23 @@
+@import './colors.scss';
+
+@mixin mediaQuery($from) {
+  @media (max-width: $from) {
+    @content;
+  }
+}
+
+@mixin primaryButton() {
+  border: 2px solid $white;
+  box-sizing: inherit;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 13pt;
+  color: $white;
+  padding: 10px 20px;
+  transition: all 0.5s;
+
+  &:hover {
+    background-color: $teal;
+    border-color: $teal;
+  }
+}
