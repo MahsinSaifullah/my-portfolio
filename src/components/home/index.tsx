@@ -2,13 +2,14 @@ import React, { useState } from 'react';
 import { InlineIcon } from '@iconify/react';
 import bxRightArrowAlt from '@iconify-icons/bx/bx-right-arrow-alt';
 import bxDownArrowAlt from '@iconify-icons/bx/bx-down-arrow-alt';
+import hamburgerMenu from '@iconify-icons/openmoji/hamburger-menu';
 
 import './index.scss';
 
 const Home: React.FC = () => {
   const [isMouseOver, setIsMouseOver] = useState(false);
   return (
-    <div className="home">
+    <section id="home" className="home">
       <div className="home__title">
         Hello I'm <span>Mahsin Saifullah</span>
         <br />I am a software developer
@@ -25,7 +26,7 @@ const Home: React.FC = () => {
           <InlineIcon className="home__icon" icon={bxRightArrowAlt} />
         )}
       </div>
-    </div>
+    </section>
   );
 };
 
