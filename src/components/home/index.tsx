@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { InlineIcon } from '@iconify/react';
 import bxRightArrowAlt from '@iconify-icons/bx/bx-right-arrow-alt';
 import bxDownArrowAlt from '@iconify-icons/bx/bx-down-arrow-alt';
-import hamburgerMenu from '@iconify-icons/openmoji/hamburger-menu';
 
 import './index.scss';
 

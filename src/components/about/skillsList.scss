@@ -1,0 +1,56 @@
+@import '../../constants/colors.scss';
+@import '../../constants/breakPoints.scss';
+@import '../../constants/mixins.scss';
+
+.skillsList {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.skillsList__bar {
+  display: flex;
+  height: 30px;
+  background-color: #eee;
+  margin-bottom: 15px;
+  position: relative;
+  color: #666;
+  font-size: 11pt;
+  align-items: center;
+
+  @include mediaQuery($small) {
+    font-size: 10px;
+    height: 22px;
+  }
+}
+
+.skillsList__tag {
+  left: 0;
+  position: absolute;
+  top: 0;
+  background-color: #04c2c9;
+  color: #fff;
+  height: 100%;
+  width: 110px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  z-index: 1;
+}
+
+.skillsList__fill {
+  position: absolute;
+  height: 100%;
+  background-color: #00a1a7;
+}
+
+.skillsList__parcentage {
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 10;
+  padding-right: 10px;
+  color: #666;
+}

@@ -1,0 +1,32 @@
+@import '../../constants/breakPoints.scss';
+@import '../../constants/colors.scss';
+@import '../../constants/mixins.scss';
+
+.customHeader__headerContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.customHeader__title {
+  margin-top: 20px;
+  font-family: 'Raleway', sans-serif;
+  color: #444649;
+  font-weight: bold;
+  font-size: 40px;
+
+  @include mediaQuery($small) {
+    font-size: 30px;
+  }
+}
+
+.customHeader__underline {
+  background: #444649;
+  height: 4px;
+  margin: 20px 0 75px 0;
+  width: 70px;
+
+  @include mediaQuery($small) {
+    width: 50px;
+  }
+}
