@@ -32,9 +32,9 @@
 }
 
 .home__button {
-  @include primaryButton();
+  @include primaryButton($teal, $white);
   @include mediaQuery($small) {
-    font-size: 10pt;
-    line-height: 20pt;
+    font-size: 10px;
+    line-height: 20px;
   }
 }

@@ -1,0 +1,77 @@
+@import '../../constants/colors.scss';
+@import '../../constants/mixins.scss';
+@import '../../constants/breakPoints.scss';
+
+.projectCard {
+  position: relative;
+  width: 340px;
+  height: 220px;
+  margin-bottom: 25px;
+  &:hover {
+    .projectCard__imageContainer {
+      opacity: 0;
+    }
+
+    .projectCard__text {
+      opacity: 1;
+    }
+
+    .projectCard__button {
+      opacity: 1;
+    }
+  }
+}
+
+.projectCard__imageContainer {
+  opacity: 1;
+  height: 100%;
+  width: 100%;
+  border-radius: 5px;
+  overflow: hidden;
+  transition: opacity 0.5s;
+  box-shadow: -3px 11px 52px -6px rgba(0, 0, 0, 0.49);
+  -webkit-box-shadow: -3px 11px 52px -6px rgba(0, 0, 0, 0.49);
+  -moz-box-shadow: -3px 11px 52px -6px rgba(0, 0, 0, 0.49);
+}
+
+.projectCard__image {
+  min-height: 220px;
+}
+
+.projectCard__text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  margin-left: -175px;
+  margin-top: -70px;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+.projectCard__title {
+  font-size: 20px;
+  color: #1b242f;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.projectCard_tech {
+  color: $pink;
+}
+
+.projectCard__button {
+  position: absolute;
+  top: 135px;
+  left: 105px;
+  opacity: 0;
+
+  @include primaryButton($pink, #1b242f);
+  border: 2px solid $pink;
+  font-size: 13px;
+  &:hover {
+    color: $white;
+  }
+}
